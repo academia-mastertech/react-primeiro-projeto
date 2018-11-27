@@ -1,4 +1,4 @@
-section{
+.Caixa{
     max-width: 100%;
     width: 420px;
     margin: auto;
@@ -9,14 +9,21 @@ section{
     border-radius: 10px;
 }
 
-section .main{
+.Caixa .main{
     display: flex;
     justify-content: space-between;
 }
 
-section .main .buttons{
+.Caixa .main .buttons{
     display: flex;
     flex-direction: column;
 }
 
-export default Caixa;
+.Caixa .main .timer{
+    display: flex;
+    font-size: 6.3rem;
+}
+
+.Caixa .main .timer span:first-child::after{
+    content: ':';
+}
